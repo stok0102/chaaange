@@ -19,6 +19,7 @@ class Fixnum
         moneys = moneys.%(key)
       end
     end
+
     denomination_string = denomination_array.join(" ")
     # binding.pry
   end
