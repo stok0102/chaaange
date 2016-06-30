@@ -14,7 +14,10 @@ describe('Fixnum#coin_collect') do
   it('returns the amount of pennies, nickels, dimes') do
     expect(18.coin_collect()).to(eq('1 dime 1 nickel 3 penny'))
   end
-  it('returns the amount of pennies, nickels, dimes') do
+  it('returns the amount of pennies, nickels, dimes, quarters') do
     expect(27.coin_collect()).to(eq('1 quarter 2 penny'))
+  end
+  it('returns the amount of change up to a dollar') do
+    expect(99.coin_collect()).to(eq('3 quarter 2 dime 4 penny'))
   end
 end
