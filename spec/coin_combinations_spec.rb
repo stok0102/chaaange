@@ -11,4 +11,7 @@ describe('Fixnum#coin_collect') do
   it('returns the amount of pennies and nickels') do
     expect(8.coin_collect()).to(eq('1 nickel 3 penny'))
   end
+  it('returns the amount of pennies, nickels, dimes') do
+    expect(18.coin_collect()).to(eq('1 dime 1 nickel 3 penny'))
+  end
 end
