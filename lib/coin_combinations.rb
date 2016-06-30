@@ -1,17 +1,17 @@
 require('pry')
 
-class Fixnum
+class String
   def coin_collect
     coins = {
-      25 => 'quarter',
-      10 => 'dime',
-      5 => 'nickel',
-      1 => 'penny'
+      25 => 'quarters',
+      10 => 'dimes',
+      5 => 'nickels',
+      1 => 'pennies'
     }
 
     denomination_array = []
 
-    moneys = self
+    moneys = self.to_i
 
     coins.each do |key,value|
       if moneys >= key
